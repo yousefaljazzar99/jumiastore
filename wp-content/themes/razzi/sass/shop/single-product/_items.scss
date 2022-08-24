@@ -1,0 +1,150 @@
+.single-product {
+	div.product {
+		.entry-summary > .stock {
+			display: none;
+		}
+
+		&.outofstock {
+			.price {
+				color: #767676;;
+			}
+		}
+
+		.product_meta {
+			margin: 20px 0;
+
+			& > span {
+				display: block;
+
+				a:not(:hover) {
+					color: var(--rz-text-color);
+				}
+			}
+
+			.label {
+				color: var(--rz-color-dark);
+				margin-right: 15px;
+			}
+		}
+
+		.product-button-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 15px;
+
+			> * {
+				margin-bottom: 15px;
+			}
+
+			p.cart {
+				margin-top: 0;
+				display: inline-block;
+
+				.single_add_to_cart_button {
+					line-height: 56px;
+				}
+			}
+
+			.single_add_to_cart_button {
+				text-transform: capitalize;
+				padding-left: 20px;
+				padding-right: 20px;
+				position: relative;
+				margin-right: 18px;
+				min-width: 230px;
+				@include razzi-button();
+				cursor: pointer;
+				border: none;
+
+				&.loading {
+					opacity: 0.5;
+					color: transparent;
+					&:after {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						height: 16px;
+						width: 16px;
+						display: inline-block;
+						border-radius: 50%;
+						border: 2px solid;
+						border-top-color: transparent;
+						-webkit-animation: razzi-spin infinite 1s linear;
+						animation: razzi-spin infinite 1s linear;
+						transition: opacity .2s linear .2s;
+						content: "";
+						margin-top: -8px;
+						margin-left: -8px;
+						color: var(--rz-color-lighter);
+					}
+				}
+
+				.razzi-svg-icon {
+					margin-left: 16px;
+					display: inline-block;
+					font-size: 19px;
+				}
+			}
+		}
+
+		button.single_add_to_cart_button:hover {
+			opacity: 0.8;
+        }
+
+		.woocommerce-product-details__short-description {
+			margin-top: 10px;
+			margin-bottom: 15px;
+			p {
+				margin: 0 0 10px;
+			}
+		}
+
+		.product-share {
+			margin-top: 35px;
+
+			.after-text {
+				display: none;
+			}
+
+			.sharing-icon {
+				margin-right: 11px;
+				color: var(--rz-color-darker);
+			}
+
+			.social-share-link {
+				font-size: 15px;
+				margin: 0 4.5px;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				line-height: 37px;
+				text-align: center;
+				border-radius: 50%;
+				color: var(--rz-color-placeholder);
+				background-color: #f5f5f5;
+
+				&:hover {
+					color: var(--rz-color-lighter);
+					background-color: var(--rz-color-darker);
+				}
+			}
+		}
+
+		.woocommerce-badges {
+			z-index: 9;
+		}
+
+	}
+}
+
+/*rtl:raw:
+.woocommerce div.product .deal-expire-countdown.razzi-countdown .divider {
+	right: auto;
+	left: -13px;
+}
+
+.size-guide-button .razzi-svg-icon {
+	margin-right: 0;
+	margin-left: 12px;
+}
+*/

@@ -1,0 +1,67 @@
+2022-07-28T06:38:23+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to WP_Rocket\Event_Management\Event_Manager::add_subscriber() must implement interface WP_Rocket\Event_Management\Subscriber_Interface, string given, called in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/Plugin.php on line 115 and defined in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/classes/event-management/class-event-manager.php:33
+Stack trace:
+#0 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/Plugin.php(115): WP_Rocket\Event_Management\Event_Manager->add_subscriber('WP_Rocket\\Engin...')
+#1 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/main.php(50): WP_Rocket\Plugin->load()
+#2 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(307): rocket_init('')
+#3 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 /home/coffeeno/public_html/j in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/classes/event-management/class-event-manager.php on line 33
+
+2022-07-28T06:38:23+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor//includes/tracker.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor/includes/autoloader.php on line 266
+
+2022-07-28T06:44:20+00:00 CRITICAL Trait 'Dhii\Container\Util\StringTranslatingTrait' not found in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/vendor/dhii/containers/src/ProxyContainer.php on line 17
+
+2022-07-28T06:44:21+00:00 CRITICAL Uncaught Error: Class 'WooCommerce\PayPalCommerce\ApiClient\Factory\ShippingFactory' not found in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php:295
+Stack trace:
+#0 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/vendor/dhii/containers/src/DelegatingContainer.php(117): WooCommerce\PayPalCommerce\ApiClient\ApiModule::WooCommerce\PayPalCommerce\ApiClient\{closure}(Object(Dhii\Container\DelegatingContainer))
+#1 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/vendor/dhii/containers/src/DelegatingContainer.php(56): Dhii\Container\DelegatingContainer->invokeFactory(Object(Closure))
+#2 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php(268): Dhii\Container\DelegatingContainer->get('api.factory.shi...')
+#3 /home/coffeeno/public_html/jumiastore/wordpress/wp-conte in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php on line 295
+
+2022-07-28T06:48:05+00:00 CRITICAL require_once(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/admin/class-wc-subscriptions-admin.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/class-wcs-core-autoloader.php on line 70
+
+2022-07-28T06:48:18+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/src/../extensions.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/src/ApiModule.php on line 28
+
+2022-07-28T06:49:39+00:00 CRITICAL Uncaught Error: Class 'WooCommerce\PayPalCommerce\ApiClient\Helper\DccApplies' not found in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php:363
+Stack trace:
+#0 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/vendor/dhii/containers/src/DelegatingContainer.php(117): WooCommerce\PayPalCommerce\ApiClient\ApiModule::WooCommerce\PayPalCommerce\ApiClient\{closure}(Object(Dhii\Container\DelegatingContainer))
+#1 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/vendor/dhii/containers/src/DelegatingContainer.php(56): Dhii\Container\DelegatingContainer->invokeFactory(Object(Closure))
+#2 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php(221): Dhii\Container\DelegatingContainer->get('api.helpers.dcc...')
+#3 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plu in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-api-client/services.php on line 363
+
+2022-07-28T06:49:50+00:00 CRITICAL require_once(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/class-wcs-cart-resubscribe.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/class-wcs-core-autoloader.php on line 70
+
+2022-07-28T06:49:50+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor/includes/elements/section.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor/includes/managers/elements.php on line 353
+
+2022-07-28T06:50:07+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to WP_Rocket\Event_Management\Event_Manager::add_subscriber() must implement interface WP_Rocket\Event_Management\Subscriber_Interface, string given, called in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/Plugin.php on line 115 and defined in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/classes/event-management/class-event-manager.php:33
+Stack trace:
+#0 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/Plugin.php(115): WP_Rocket\Event_Management\Event_Manager->add_subscriber('WP_Rocket\\Engin...')
+#1 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/main.php(50): WP_Rocket\Plugin->load()
+#2 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(307): rocket_init('')
+#3 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 /home/coffeeno/public_html/j in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/classes/event-management/class-event-manager.php on line 33
+
+2022-07-28T06:50:29+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/deprecated/deprecated.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/main.php on line 61
+
+2022-07-28T06:50:29+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/deprecated/3.2.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/main.php on line 62
+
+2022-07-28T06:50:29+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/deprecated/deprecated.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/wp-rocket/inc/main.php on line 61
+
+2022-07-28T06:59:39+00:00 CRITICAL require_once(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/woocommerce/subscriptions-core/includes/class-wc-subscriptions-core-plugin.php on line 97
+
+2022-07-28T06:59:39+00:00 CRITICAL require_once(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/action-scheduler.php on line 54
+
+2022-07-28T07:00:14+00:00 CRITICAL Uncaught Error: Class 'ElementorPro\Modules\Forms\Classes\Recaptcha_V3_Handler' not found in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor-pro/modules/forms/module.php:163
+Stack trace:
+#0 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor/core/base/module.php(85): ElementorPro\Modules\Forms\Module->__construct()
+#1 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor-pro/core/modules-manager.php(69): Elementor\Core\Base\Module::instance()
+#2 /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor-pro/plugin.php(312): ElementorPro\Core\Modules_Manager->__construct()
+#3 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(307): ElementorPro\Plugin->on_elementor_init('')
+#4 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/coffeeno/public_html/jumiastore/wordpress/wp-includes/plugin.php(476): WP_Hook->do_action( in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/elementor-pro/modules/forms/module.php on line 163
+
+2022-07-28T07:01:33+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/razzi-addons/modules/products-filter/widget.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/razzi-addons/class-razzi-addons-autoloader.php on line 39
+
+2022-07-28T07:02:17+00:00 CRITICAL require(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/automattic/jetpack-sync/src/class-listener.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/woocommerce-payments/vendor/jetpack-autoloader/class-php-autoloader.php on line 90
+
+2022-07-28T07:02:17+00:00 CRITICAL require_once(): Failed opening required '/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/includes/class-yith-debug.php' (include_path='/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/:/home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/kirki/core:.:/opt/alt/php74/usr/share/pear') in /home/coffeeno/public_html/jumiastore/wordpress/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/yit-plugin.php on line 34
+

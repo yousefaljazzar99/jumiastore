@@ -1,0 +1,99 @@
+.razzi-deals-carousel-2 {
+    .deals-carousel-2__thumbnail {
+        margin-bottom: 21px;
+    }
+
+    .deals-carousel-2__item {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .deals-carousel-2__deal {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--rz-color-primary);
+        margin-bottom: 7px;
+    }
+
+    .deals-carousel-2__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: var( --rz-color-dark );
+    }
+
+    .razzi-countdown {
+        justify-content: space-between;
+        height: max-content;
+        margin-right: 40px;
+    }
+
+    .timer {
+        width: 48px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4px;
+        padding: 10px 0;
+        background-color: var(--rz-color-primary);
+
+        .digits {
+            font-weight: 500;
+            font-size: 20px;
+            color: var( --rz-color-lighter );
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+
+        .text {
+            line-height: 1;
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: lowercase;
+            color: var( --rz-color-lighter );
+        }
+
+        .divider,
+        &.seconds {
+            display: none;
+        }
+
+        &.minutes {
+            margin-right: 0;
+        }
+    }
+
+    .deals-carousel-2__button {
+        .razzi-svg-icon {
+            font-size: 13px;
+        }
+
+        .razzi-button {
+            width: 100%;
+            line-height: 50px;
+            color: var(--rz-color-dark);
+            background-color: var(--rz-color-lighter);
+            border: 1px solid var(--rz-color-primary);
+        }
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        position: static;
+        margin-top: 74px;
+    }
+
+    .rz-swiper-button {
+        font-size: 20px;
+        color: var(--rz-color-dark);
+        background-color: #fff;
+    }
+
+    .rz-swiper-button-next {
+        right: 0;
+    }
+
+    .rz-swiper-button-prev {
+        left: 0;
+    }
+
+}

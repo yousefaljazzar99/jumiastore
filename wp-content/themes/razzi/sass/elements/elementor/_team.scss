@@ -1,0 +1,78 @@
+.razzi-team-member-carousel {
+    margin: 0 -20px;
+}
+
+.razzi-team-member  {
+    padding: 0 20px;
+    width: 33.33%;
+}
+
+.razzi-team-member__info {
+	padding: 12px 20px 12px 20px;
+}
+
+.razzi-team-member__name {
+	margin: 0;
+    font-size: 18px;
+}
+
+.razzi-team-member__job {
+	@include font-size(14/16);
+}
+
+.razzi-team-member__socials {
+	float: right;
+
+	a {
+		@include font-size(12/16);
+		margin-left: 20px;
+        color: #838889;
+
+        &:hover {
+            color: #111;
+        }
+
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.razzi-team-member-carousel {
+    .rz-swiper-button-prev {
+        left: 20px;
+    }
+
+    .rz-swiper-button-next {
+        right: 20px;
+    }
+
+    .rz-swiper-button {
+        line-height: 44px;
+        background-color: rgba(255, 255, 255, 0.9);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .razzi-team-member-carousel {
+        margin: 0 -15px;
+    }
+
+    .razzi-team-member {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .razzi-team-member-carousel.razzi-swiper-carousel-elementor .rz-swiper-button-prev {
+        left: 15px;
+    }
+
+    .razzi-team-member-carousel.razzi-swiper-carousel-elementor  .rz-swiper-button-next {
+        right: 15px;
+    }
+}

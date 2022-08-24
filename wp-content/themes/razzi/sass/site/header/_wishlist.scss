@@ -1,0 +1,26 @@
+.site-header .header-wishlist {
+	.wishlist-icon {
+		position: relative;
+		font-size: 18px;
+		color: var(--rz-header-color-dark);
+		position: relative;
+	}
+
+	.counter {
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		font-size: 10px;
+		font-weight: 500;
+		color: var( --rz-background-text-color-primary );
+		text-align: center;
+		line-height: 11px;
+		min-width: 18px;
+		height: 18px;
+		border-radius: 30px;
+		padding: 4px;
+		background-color: var( --rz-background-color-primary );
+		display: inline-block;
+	}
+
+}

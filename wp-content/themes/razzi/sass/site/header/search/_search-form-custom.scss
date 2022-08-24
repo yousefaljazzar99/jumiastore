@@ -1,0 +1,277 @@
+.aws-container .aws-search-form {
+	height: 54px;
+	&:focus {
+		.aws-form-btn {
+			border-color: var(--rz-color-darker);
+		}
+	}
+	.aws-search-field {
+		padding-left: 25px;
+		font-size: 16px;
+		line-height: 54px;
+		min-width: 370px;
+	}
+
+	.aws-form-btn {
+		z-index: 10;
+		border-color: transparent;
+		background-color: transparent;
+		width: auto;
+		position: absolute;
+		right: 0;
+		top: -3px;
+		bottom: 0;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	.aws-search-btn_icon {
+		width: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+		color: var(--rz-text-color-gray);
+
+		svg {
+			width: 24px;
+		}
+	}
+
+	&.aws-form-active,
+	&.aws-processing {
+		.aws-search-btn_icon {
+			display: none;
+		}
+	}
+
+	.aws-search-clear {
+		right: 10px;
+	}
+
+	::-webkit-input-placeholder {
+		color: #777;
+	}
+	::-moz-placeholder {
+		color: #777;
+	}
+	:-ms-input-placeholder {
+		color: #777;
+	}
+	:-moz-placeholder {
+		color: #777;
+	}
+
+
+}
+
+.aws-container[data-buttons-order="3"] .aws-search-form {
+	.aws-form-btn {
+		left: 0;
+		right: auto;
+	}
+
+	.aws-search-field {
+		padding-left: 60px;
+		padding-right: 25px;
+	}
+}
+
+.aws-search-result {
+	border: none;
+	margin-top: 11px;
+	font-size: 14px;
+	padding-bottom: 20px;
+
+	ul {
+		li {
+			padding-left: 20px;
+    		padding-right: 20px;
+			border: none;
+		}
+	}
+
+	.aws_result_item{
+		&:hover {
+			background-color: transparent;
+		}
+
+		&:first-child {
+			padding-top: 20px;
+		}
+	}
+
+	.aws_result_image {
+		padding-right: 15px;
+		min-width: 100px;
+
+		img {
+			width: 100px;
+		}
+	}
+
+	.aws_result_title {
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 23px;
+		color: var(--rz-color-dark);
+	}
+
+	.aws_result_stock,
+	.aws_result_sku {
+		margin: 7px 0;
+	}
+
+	.aws_result_excerpt {
+		color: var(--rz-text-color);
+		margin: 7px 0;
+	}
+
+	.aws_result_price {
+		font-size: 15px;
+		color: var(--rz-text-color-gray);
+		line-height: 23px;
+		font-weight: 500;
+	}
+
+	.aws_result_link {
+		padding: 10px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.aws_search_more {
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		a {
+			@include razzi-button-outline();
+		}
+	}
+
+	.aws_no_result {
+		padding: 10px 26px;
+	}
+}
+
+.search-modal-opened .aws-search-result {
+	ul {
+		max-height: calc( 100vh - 250px);
+
+		li {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.aws_search_more {
+		padding-bottom: 0;
+	}
+}
+
+.form-type-boxed {
+	.aws-container {
+		.aws-search-form {
+			height: 100%;
+
+			.aws-search-field {
+				position: relative;
+				height: 62px;
+				font-size: 15px;
+				border-radius: 0;
+				min-width: 370px;
+				width: 100%;
+
+				&:focus {
+					outline: none;
+				}
+
+				&::-webkit-input-placeholder {
+					color: var( --rz-color-placeholder );
+				}
+
+				&:-ms-input-placeholder {
+					color: var( --rz-color-placeholder );
+				}
+
+				&::placeholder {
+					color: var( --rz-color-placeholder );
+				}
+			}
+		}
+	}
+
+	&.form-skin-dark {
+		.aws-container {
+			.aws-search-form {
+				.aws-search-field {
+					background-color: #303030;
+					color: var( --rz-header-color-light );
+					border: 1px solid transparent;
+
+					&:focus {
+						border-color: transparent;
+					}
+				}
+
+				.aws-search-btn_icon {
+					color: var( --rz-color-lighter );
+				}
+			}
+		}
+	}
+}
+
+.search-type-form-cat {
+	.aws-container {
+		width: 100%;
+	}
+
+	.aws-search-form {
+		.aws-search-field,
+		.aws-form-btn {
+			height: 60px;
+		}
+	}
+
+}
+
+.form-type-full-width {
+	.aws-search-form {
+		.aws-search-field,
+		.aws-form-btn {
+			border: none;
+			border-bottom: 1px solid var(--rz-border-color-dark);
+		}
+	}
+}
+
+.header-v9 .header-search.form-type-boxed {
+	.aws-search-form {
+		.aws-search-field {
+			background-color: transparent;
+			color: var(--rz-color-dark);
+			border-color: var(--rz-border-color-dark);
+			height: 48px;
+			min-width: 450px;
+		}
+
+		.aws-form-btn {
+			border-color: var(--rz-border-color-dark);
+		}
+
+		.aws-search-btn_icon {
+			color: inherit;
+		}
+	}
+}
+
+.header-v11 .site-header .header-search.search-form-type {
+	.aws-search-form {
+		.aws-search-field {
+			min-width: 522px;
+		}
+
+	}
+}

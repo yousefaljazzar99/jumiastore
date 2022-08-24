@@ -1,0 +1,146 @@
+.razzi-products-with-banner {
+    &:not(.show-category) {
+        .meta-cat {
+            display: none !important;
+        }
+    }
+
+    &:not(.show-rating) {
+        .star-rating {
+            display: none !important;
+        }
+    }
+
+    &:not(.show-quickview) {
+        .quick-view-button {
+            display: none !important;
+        }
+    }
+
+    &:not(.show-addtocart) {
+        .rz-loop_atc_button {
+            display: none !important;
+        }
+    }
+
+    &:not(.show-wishlist) {
+        .yith-wcwl-add-to-wishlist {
+            display: none !important;
+        }
+    }
+
+    &:not(.show-badges) {
+        .woocommerce-badges {
+            display: none !important;
+        }
+    }
+
+    &.btn-hidden {
+        .product-loop__buttons {
+            display: none !important;
+        }
+    }
+
+    .masonry-banner-content {
+        .banner-image {
+            position: relative;
+            display: flex;
+            line-height: 1;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var( --rz-color-dark );
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            padding: 30px 45px;
+        }
+    }
+
+    .razzi-banner__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+		margin-bottom: 25px;
+    }
+
+    .razzi-banner__description {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .razzi-banner__button {
+        margin-top: 12px;
+    }
+
+    ul.products {
+		margin: 0;
+        &.layout-masonry {
+            li.product {
+				margin-bottom: 0;
+				padding: 0;
+                &.has-banner {
+                    grid-column: span 2;
+                    grid-row: span 2;
+                    width: 100%;
+                }
+
+                .star-rating {
+                    margin-bottom: 5px;
+                }
+
+                .razzi-banner__masonry,
+                .masonry-banner-content,
+                .banner-image {
+                    height: 100%;
+                }
+
+                .banner-image img {
+                    object-fit: cover;
+                }
+
+				.product-thumbnail img {
+					object-fit: contain;
+				}
+            }
+        }
+    }
+
+    .product-summary {
+        > * {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .link-product-all {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    &.product-link-type-all {
+        .link-product-all {
+            display: block;
+        }
+    }
+}
